@@ -16,11 +16,13 @@
 
 ## Background
 
-TBD
+There are several global objects such as `TextEncoder` and `crypto` that are
+present in Node.js and most browsers, but not in React Native.
 
-## Security
+This is a polyfill for these objects, which exports the following globals:
 
-TBD
+* `TextEncoder` and `TextDecoder`
+* `crypto` and `crypto.subtle` (WebCryptography API)
 
 ## Install
 
@@ -46,7 +48,16 @@ npm install
 
 ## Usage
 
-TBD
+When developing for React Native and using various DCC-provided libraries such
+as [`@digitalcredentials/vc`](https://github.com/digitalcredentials/vc),
+make sure to import this polyfill before importing the DCC libraries:
+
+```js
+import '@digitalcredentials/data-integrity-rn'
+// Now you can import various libraries
+import '@digitalcredentials/vc'
+// ...
+```
 
 ## Contribute
 
