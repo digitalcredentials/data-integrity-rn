@@ -1,9 +1,9 @@
-# Example Isomorphic TS/JS Lib Template _(@digitalcredentials/isomorphic-lib-template)_
+# Example Isomorphic TS/JS Lib Template _(@digitalcredentials/data-integrity-rn)_
 
-[![Build status](https://img.shields.io/github/actions/workflow/status/digitalcredentials/isomorphic-lib-template/main.yml?branch=main)](https://github.com/digitalcredentials/isomorphic-lib-template/actions?query=workflow%3A%22Node.js+CI%22)
-[![NPM Version](https://img.shields.io/npm/v/@digitalcredentials/isomorphic-lib-template.svg)](https://npm.im/@digitalcredentials/isomorphic-lib-template)
+[![Build status](https://img.shields.io/github/actions/workflow/status/digitalcredentials/data-integrity-rn/main.yml?branch=main)](https://github.com/digitalcredentials/data-integrity-rn/actions?query=workflow%3A%22Node.js+CI%22)
+[![NPM Version](https://img.shields.io/npm/v/@digitalcredentials/data-integrity-rn.svg)](https://npm.im/@digitalcredentials/data-integrity-rn)
 
-> A Typescript/Javascript isomorphic library template, for use in the browser, Node.js, and React Native.
+> React Native polyfill for globals required for Data Integrity and VC apps (TextEncoder, URL, setImmediate, etc).
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ TBD
 To install via NPM:
 
 ```
-npm install @digitalcredentials/isomorphic-lib-template
+npm install @digitalcredentials/data-integrity-rn
 ```
 
 ### Development
@@ -39,8 +39,8 @@ npm install @digitalcredentials/isomorphic-lib-template
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalcredentials/isomorphic-lib-template.git
-cd isomorphic-lib-template
+git clone https://github.com/digitalcredentials/data-integrity-rn.git
+cd data-integrity-rn
 npm install
 ```
 
