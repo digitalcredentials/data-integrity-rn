@@ -1,9 +1,9 @@
-# Example Isomorphic TS/JS Lib Template _(@digitalcredentials/data-integrity-rn)_
+# Data Integrity Polyfill for React Native _(@digitalcredentials/data-integrity-rn)_
 
 [![Build status](https://img.shields.io/github/actions/workflow/status/digitalcredentials/data-integrity-rn/main.yml?branch=main)](https://github.com/digitalcredentials/data-integrity-rn/actions?query=workflow%3A%22Node.js+CI%22)
 [![NPM Version](https://img.shields.io/npm/v/@digitalcredentials/data-integrity-rn.svg)](https://npm.im/@digitalcredentials/data-integrity-rn)
 
-> React Native polyfill for globals required for Data Integrity and VC apps (TextEncoder, URL, setImmediate, etc).
+> React Native polyfill for globals required for Data Integrity and VC apps (TextEncoder, crypto.subtle, etc).
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ TBD
 
 ## Install
 
-- Node.js 16+ is recommended.
+- Node.js 20+ is recommended.
 
 ### NPM
 

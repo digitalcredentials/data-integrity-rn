@@ -1,17 +1,14 @@
 {
   "name": "@digitalcredentials/data-integrity-rn",
-  "description": "React Native polyfill for globals required for Data Integrity and VC apps (TextEncoder, URL, setImmediate, etc).",
-  "version": "0.0.1",
+  "description": "React Native polyfill for globals required for Data Integrity and VC apps (TextEncoder, crypto.subtle, etc).",
+  "version": "0.0.0",
   "scripts": {
     "build": "npm run clear && tsc -d && tsc -p tsconfig.esm.json",
     "clear": "rimraf dist/*",
     "lint": "ts-standard --fix",
     "prepare": "npm run build",
     "prettier": "prettier src --write",
-    "rebuild": "npm run clear && npm run build",
-    "test": "npm run lint && npm run test-node",
-    "test-karma": "karma start karma.conf.js",
-    "test-node": "cross-env NODE_ENV=test TS_NODE_PROJECT=tsconfig.spec.json TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register --project tsconfig.spec.json 'test/*.ts'"
+    "rebuild": "npm run clear && npm run build"
   },
   "files": [
     "dist",
@@ -22,36 +19,17 @@
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "@types/chai": "^4.3.5",
-    "@types/mocha": "^10.0.1",
     "@types/node": "^20.4.6",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "chai": "^4.3.7",
     "cross-env": "^7.0.3",
     "eslint": "^8.46.0",
-    "karma": "^6.4.2",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^3.2.0",
-    "karma-mocha": "^2.0.1",
-    "karma-mocha-reporter": "^2.2.5",
-    "karma-sourcemap-loader": "^0.4.0",
-    "karma-typescript": "^5.5.4",
-    "mocha": "^10.2.0",
     "rimraf": "^5.0.1",
-    "ts-node": "^10.9.1",
     "ts-standard": "^12.0.2",
     "typescript": "^5.1.6"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "mocha": {
-    "require": "ts-node/register",
-    "extension": [
-      "ts"
-    ],
-    "spec": "test/**/*.ts"
   },
   "ts-standard": {
     "ignore": [

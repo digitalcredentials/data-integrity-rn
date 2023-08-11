@@ -1,1 +1,2 @@
-// declare module 'jsonld'
+declare module 'jsonld'
+declare module 'rdf-canonize'
