@@ -48,9 +48,10 @@ npm install
 
 ## Usage
 
-When developing for React Native and using various DCC-provided libraries such
-as [`@digitalcredentials/vc`](https://github.com/digitalcredentials/vc),
-make sure to import this polyfill before importing the DCC libraries:
+When developing for React Native and using various Digital Bazaar or DCC provided
+libraries such as [`jsonld`](https://github.com/digitalbazaar/jsonld.js) or
+[`@digitalcredentials/vc`](https://github.com/digitalcredentials/vc),
+make sure to import this polyfill before importing the libraries:
 
 ```js
 import '@digitalcredentials/data-integrity-rn'
