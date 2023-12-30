@@ -12,12 +12,20 @@
   },
   "files": [
     "dist",
+    "src",
     "README.md",
     "LICENSE.md"
   ],
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "types": "src/declarations.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "devDependencies": {
     "@types/node": "^20.4.6",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
