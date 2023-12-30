@@ -1,5 +1,10 @@
 # data-integrity-rn Changelog
 
+## 1.0.2 - 2023-12-29
+
+### Changed
+- Fix dependencies.
+
 ## 1.0.1 - 2023-12-29
 
 ### Changed
