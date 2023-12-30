@@ -65,5 +65,9 @@
     "url": "https://github.com/digitalcredentials/data-integrity-rn"
   },
   "homepage": "https://github.com/digitalcredentials/data-integrity-rn",
-  "bugs": "https://github.com/digitalcredentials/data-integrity-rn/issues"
+  "bugs": "https://github.com/digitalcredentials/data-integrity-rn/issues",
+  "dependencies": {
+    "fast-text-encoding": "^1.0.6",
+    "isomorphic-webcrypto": "^2.3.8"
+  }
 }
